@@ -16,7 +16,7 @@ const fontHeadline = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ProfileCanvas - Your Modern Personal Portfolio",
+  title: "My Portfolio",
   description: "Create and showcase your professional journey with a sleek, modern, and responsive personal portfolio. Built with Next.js and enhanced with AI.",
   keywords: ["Personal Portfolio", "Next.js", "React", "Web Developer", "Software Engineer", "Portfolio Website", "AI"],
 };

@@ -14,11 +14,11 @@ const Hero = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
         <div className="md:col-span-1 flex flex-col items-center text-center">
           <Image
-            src="https://placehold.co/300x300.png"
+            src="/images/profile.jpeg"
             alt="Himanshu Gangwar"
             width={200}
             height={200}
-            className="rounded-full shadow-lg border-4 border-primary/20"
+            className="rounded-full object-cover shadow-lg border-4 border-primary/20"
             data-ai-hint="profile picture"
           />
           <h1 className="text-4xl font-bold font-headline mt-6">Himanshu Gangwar</h1>
@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
           <div className="flex space-x-4 mt-4">
             <a href="https://github.com/zenitsu0509" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
+            <a href="https://www.linkedin.com/in/himanshu-gangwar-a1b05a294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
             <a href="mailto:gangwarsanu8@gmail.com" aria-label="Email"><Mail className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Hero = () => {
                 <a href="#contact">Contact Me</a>
             </Button>
             <Button asChild variant="outline">
-                <a href="#" download>Download CV</a>
+                <a href="/documents/Himanshu_resume_W.pdf" download>Download CV</a>
             </Button>
           </div>
         </div>

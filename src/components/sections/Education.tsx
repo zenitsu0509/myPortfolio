@@ -6,25 +6,26 @@ import type { EducationItem } from '@/types';
 
 const educationHistory: EducationItem[] = [
   {
-    institution: 'State University',
-    degree: 'Master of Science in Computer Science',
-    years: '2020 - 2022',
-    gpa: '3.9/4.0',
+    institution: 'Institute of Engineering and Technology, Lucknow',
+    degree: 'B.Tech in Computer Science and Engineering (AI)',
+    years: 'Sept 2023 - Sept 2027',
+    gpa: '7.6/10.0',
+    details: [],
+  },
+  {
+    institution: 'Shishu Bharti Inter Collage, Rudrapur',
+    degree: 'Intermediate (12th Grade)',
+    years: 'Completed May 2023',
     details: [
-      'Specialized in Artificial Intelligence and Machine Learning.',
-      'Thesis on "Natural Language Processing for Sentiment Analysis".',
-      'Recipient of the Dean\'s List for all semesters.',
+      'Grade: 89.6%',
     ],
   },
   {
-    institution: 'Tech Institute',
-    degree: 'Bachelor of Science in Software Engineering',
-    years: '2016 - 2020',
-    gpa: '3.8/4.0',
+    institution: 'Shishu Bharti Inter Collage, Rudrapur',
+    degree: 'High School (10th Grade)',
+    years: 'Completed May 2021',
     details: [
-      'Graduated with honors.',
-      'President of the university coding club.',
-      'Completed a capstone project on a mobile application for local event discovery.',
+      'Grade: 85.4',
     ],
   },
 ];
@@ -48,16 +49,18 @@ const Education = () => {
                   <CardDescription>
                     <p className="font-semibold">{item.institution}</p>
                     <p>{item.years}</p>
-                    {item.gpa && <p>GPA: {item.gpa}</p>}
+                    {item.gpa && <p>CGPA: {item.gpa}</p>}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="list-disc space-y-2 pl-4 text-sm text-muted-foreground">
-                    {item.details.map((detail, i) => (
-                      <li key={i}>{detail}</li>
-                    ))}
-                  </ul>
-                </CardContent>
+                {item.details.length > 0 && (
+                  <CardContent>
+                    <ul className="list-disc space-y-2 pl-4 text-sm text-muted-foreground">
+                      {item.details.map((detail, i) => (
+                        <li key={i}>{detail}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                )}
               </Card>
             </div>
           </div>

@@ -1,37 +1,37 @@
 import React from 'react';
-import { Award, BadgeCheck, BookOpen } from 'lucide-react';
+import { Star, Trophy, BrainCircuit } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Section, { SectionTitle } from '../common/Section';
 import type { Achievement } from '@/types';
 
 const achievements: Achievement[] = [
   {
-    icon: <Award className="h-8 w-8 text-primary" />,
-    title: 'First Place Hackathon',
-    organization: 'Tech University',
-    date: 'March 2023',
-    description: 'Won first place in a university-wide hackathon by developing a real-time collaborative coding platform.',
+    icon: <Star className="h-8 w-8 text-primary" />,
+    title: '2-Star Rating on CodeChef',
+    organization: 'CodeChef',
+    date: 'Competitive Programming',
+    description: 'Achieved a 2-star rating, demonstrating problem-solving and competitive programming skills on the platform.',
   },
   {
-    icon: <BadgeCheck className="h-8 w-8 text-primary" />,
-    title: 'AWS Certified Cloud Practitioner',
-    organization: 'Amazon Web Services',
-    date: 'June 2022',
-    description: 'Validated foundational, high-level understanding of AWS Cloud, services, and terminology.',
+    icon: <BrainCircuit className="h-8 w-8 text-primary" />,
+    title: 'Prompt Design in Vertex AI',
+    organization: 'Google Cloud Certificate',
+    date: 'Certification',
+    description: 'Completed certification for prompt design in Google\'s Vertex AI platform, enhancing skills in generative AI.',
   },
   {
-    icon: <BookOpen className="h-8 w-8 text-primary" />,
-    title: 'Published Research Paper',
-    organization: 'International Journal of Computer Science',
-    date: 'August 2021',
-    description: 'Co-authored a research paper on efficient algorithms for large-scale data processing, published in a peer-reviewed journal.',
+    icon: <Trophy className="h-8 w-8 text-primary" />,
+    title: 'Top 1% in 12th-Grade Exams',
+    organization: 'Uttarakhand Board',
+    date: 'Academics',
+    description: 'Achieved a score in the top 1 percentile in the state-level 12th-grade examinations.',
   },
 ];
 
 const Achievements = () => {
   return (
     <Section id="achievements">
-      <SectionTitle>Achievements & Certificates</SectionTitle>
+      <SectionTitle>Honors & Awards</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((item, index) => (
           <Card key={index} className="flex flex-col text-center items-center">

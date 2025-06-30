@@ -6,33 +6,13 @@ import type { ExperienceItem } from '@/types';
 
 const workExperience: ExperienceItem[] = [
   {
-    company: 'Innovate Corp',
-    title: 'Senior Software Engineer',
-    dates: 'Jan 2022 - Present',
+    company: 'Whissle AI',
+    title: 'AI/ASR Intern',
+    dates: 'March 2024 - July 2024 (Remote)',
     description: [
-      'Led the development of a new microservices architecture, improving system scalability by 40%.',
-      'Mentored junior engineers, fostering a culture of knowledge sharing and growth.',
-      'Implemented CI/CD pipelines which reduced deployment time by 75%.',
-    ],
-  },
-  {
-    company: 'Tech Solutions Inc.',
-    title: 'Software Engineer',
-    dates: 'Jun 2020 - Dec 2021',
-    description: [
-      'Developed and maintained features for a large-scale e-commerce platform using React and Node.js.',
-      'Collaborated with cross-functional teams to define and ship new features.',
-      'Improved application performance by optimizing database queries and frontend rendering.',
-    ],
-  },
-  {
-    company: 'Digital Agency',
-    title: 'Junior Web Developer',
-    dates: 'May 2019 - May 2020',
-    description: [
-      'Built responsive websites for clients using HTML, CSS, and JavaScript.',
-      'Assisted in the development of a custom CMS for managing client content.',
-      'Gained experience with version control systems like Git.',
+      'Worked with Meta Automatic Speech Recognition (ASR) models on various speech-related tasks.',
+      'Performed data cleaning and annotation for ASR model training datasets.',
+      'Experimented with and evaluated new and emerging speech data models.',
     ],
   },
 ];

@@ -18,7 +18,7 @@ const Contact = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form action="https://formspree.io/f/your_form_id" method="POST" className="space-y-4">
+          <form action="#" method="POST" className="space-y-4">
             <Input name="name" type="text" placeholder="Your Name" required />
             <Input name="email" type="email" placeholder="Your Email" required />
             <Textarea name="message" placeholder="Your Message" required />

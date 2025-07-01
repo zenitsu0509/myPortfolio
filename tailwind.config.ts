@@ -21,6 +21,7 @@ export default {
         headline: ['var(--font-headline)', 'sans-serif'],
       },
       colors: {
+        validate: '#479E9A',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

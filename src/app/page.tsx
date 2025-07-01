@@ -22,6 +22,7 @@ export default function Home() {
         <Achievements />
         <Certificates />
         <Contact />
+        
       </main>
       <Footer />
     </div>

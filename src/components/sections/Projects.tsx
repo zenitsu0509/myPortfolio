@@ -14,8 +14,8 @@ const projects: Project[] = [
     technologies: ['Python', 'Streamlit', 'Pinecone', 'Hugging Face', 'NLP'],
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'chatbot interface',
-    liveDemo: '#',
-    githubLink: '#',
+    liveDemo: 'https://aryaai.streamlit.app/',
+    githubLink: 'https://github.com/zenitsu0509/ARYA-Chatbot',
   },
   {
     name: 'LinkedIn Post Generator',
@@ -23,8 +23,8 @@ const projects: Project[] = [
     technologies: ['Python', 'Streamlit', 'LangChain', 'ChatGroq API'],
     image: 'https://placehold.co/600x400.png',
     dataAiHint: 'social media generator',
-    liveDemo: '#',
-    githubLink: '#',
+    liveDemo: 'https://linkdin-post-generator.streamlit.app/',
+    githubLink: 'https://github.com/zenitsu0509/Linkdin-Post-generator',
   },
 ];
 

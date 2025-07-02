@@ -53,15 +53,19 @@ const Certificates = () => {
       <SectionTitle>Certificates</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certificates.map((certificate, index) => (
-          <Card key={index} className="flex flex-col">
+          <Card key={index} className="flex flex-col h-full">
             <CardHeader>
-              <CardTitle>{certificate.name}</CardTitle>
+              <CardTitle className="text-lg leading-tight">{certificate.name}</CardTitle>
             </CardHeader>
             <CardContent className="flex-grow flex flex-col">
-              <p className="text-muted-foreground flex-grow">{certificate.description}</p>
-              <div className="mt-4 flex justify-between items-center">
+              <p className="text-muted-foreground flex-grow mb-4">{certificate.description}</p>
+              <div className="mt-auto flex justify-between items-center">
                 <p className="text-sm font-semibold">{certificate.organization}</p>
-                <Button asChild variant="outline" size="sm">
+                <Button 
+                  asChild 
+                  size="sm" 
+                  className="bg-[#479e9a] hover:bg-[#3a8a86] text-white border-[#479e9a]"
+                >
                   <a href={certificate.link} target="_blank" rel="noopener noreferrer">
                     Validate
                   </a>

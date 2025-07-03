@@ -62,7 +62,7 @@ const Header = () => {
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
           <CodeXml className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline">ProfileCanvas</span>
+          <span className="font-bold font-headline">Himanshu Gangwar</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -82,7 +82,7 @@ const Header = () => {
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold mb-4">
                    <CodeXml className="h-6 w-6 text-primary" />
-                   <span className="font-bold font-headline">ProfileCanvas</span>
+                   <span className="font-bold font-headline">Himanshu Gangwar</span>
                 </Link>
                 {navLinks.map((link) => (
                   <NavLink key={link.href} {...link} />

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import MediumIcon from '../icons/MediumIcon';
 import Section from '../common/Section';
 import { Button } from '../ui/button';
 
@@ -42,6 +43,7 @@ const Hero = () => {
           <div className="flex space-x-4 mt-4">
             <a href="https://github.com/zenitsu0509" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
             <a href="https://www.linkedin.com/in/himanshu-gangwar-a1b05a294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
+            <a href="https://medium.com/@himanshugangwar0509" target="_blank" rel="noopener noreferrer" aria-label="Medium"><MediumIcon className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
             <a href="mailto:gangwarsanu8@gmail.com" aria-label="Email"><Mail className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" /></a>
           </div>
         </div>

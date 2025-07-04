@@ -1,0 +1,6 @@
+flask
+flask-cors
+pinecone
+sentence-transformers
+groq
+python-dotenv

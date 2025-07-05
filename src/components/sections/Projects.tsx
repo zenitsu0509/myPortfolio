@@ -26,6 +26,24 @@ const projects: Project[] = [
     liveDemo: 'https://linkdin-post-generator.streamlit.app/',
     githubLink: 'https://github.com/zenitsu0509/Linkdin-Post-generator',
   },
+  {
+    name: 'MEDGraphy',
+    description: 'A medicine graph RAG-based project that leverages a knowledge graph for medical information retrieval, providing accurate answers to complex medical queries.',
+    technologies: ['Python', 'Streamlit', 'LangChain', 'Neo4j', 'RAG'],
+    image: '/images/medgraphy.png',
+    dataAiHint: 'medical knowledge graph',
+    liveDemo: 'https://madgraphy.streamlit.app/',
+    githubLink: 'https://github.com/zenitsu0509/MEDGraphy',
+  },
+  {
+    name: 'Mischief Casino',
+    description: 'An online casino website with user authentication, wallet features to add or remove funds, and a variety of games to play.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'NextAuth.js'],
+    image: '/images/gemecasino.png',
+    dataAiHint: 'online casino website',
+    liveDemo: 'https://mischief-casino-project.vercel.app/',
+    githubLink: 'https://github.com/zenitsu0509/Mischief-Casino-Project',
+  },
 ];
 
 const Projects = () => {

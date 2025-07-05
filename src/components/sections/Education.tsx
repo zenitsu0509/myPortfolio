@@ -9,7 +9,7 @@ const educationHistory: EducationItem[] = [
     institution: 'Institute of Engineering and Technology, Lucknow',
     degree: 'B.Tech in Computer Science and Engineering (AI)',
     years: 'Sept 2023 - Sept 2027',
-    gpa: '7.6/10.0',
+    gpa: '7.9/10.0',
     details: [],
   },
   {

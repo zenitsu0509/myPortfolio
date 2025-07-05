@@ -83,7 +83,7 @@ const FloatingChatbot = () => {
     } catch (error) {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "Sorry, I'm having trouble connecting right now. Please try again later.",
+        text: "I'm currently having trouble connecting to my knowledge base. This might be because the backend service is starting up or temporarily unavailable. Please try again in a moment, or feel free to contact Himanshu directly through the contact section.",
         sender: 'bot',
         timestamp: new Date(),
       };

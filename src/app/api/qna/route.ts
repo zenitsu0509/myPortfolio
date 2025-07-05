@@ -3,10 +3,13 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    console.log('API route received request:', body);
+    console.log('API route received request');
+    
+    // Use environment variable for backend URL, fallback to localhost for development
+    const backendUrl = process.env.PYTHON_BACKEND_URL || 'http://localhost:5001';
     
     // Forward request to Python backend
-    const response = await fetch('http://localhost:5001/api/qna', {
+    const response = await fetch(`${backendUrl}/api/qna`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -21,13 +24,12 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await response.json();
-    console.log('Backend response data:', data);
     return NextResponse.json(data);
     
   } catch (error) {
     console.error('API route error:', error);
     return NextResponse.json(
-      { error: 'Failed to connect to backend service. Make sure the Python backend is running on port 5001.' },
+      { error: 'Failed to connect to backend service. Please check if the backend is running.' },
       { status: 500 }
     );
   }

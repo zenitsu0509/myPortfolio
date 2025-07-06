@@ -246,3 +246,17 @@ def not_found(error):
 def internal_error(error):
     logger.error(f"Internal server error: {str(error)}")
     return jsonify({"error": "Internal server error"}), 500
+
+# The following block is for local development and will not be used by Render
+# if __name__ == "__main__":
+#     # Validate environment variables
+#     required_vars = ["PINECONE_API_KEY", "GROQ_API_KEY"]
+#     missing_vars = [var for var in required_vars if not os.getenv(var)]
+#     
+#     if missing_vars:
+#         logger.error(f"Missing required environment variables: {missing_vars}")
+#         exit(1)
+#     
+#     logger.info("Starting Flask application for local development...")
+#     # Use a different port for local dev to avoid conflicts
+#     app.run(debug=True, port=5001, host='0.0.0.0')

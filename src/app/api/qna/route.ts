@@ -5,8 +5,17 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     console.log('API route received request');
     
-    // Use environment variable for backend URL, fallback to localhost for development
-    const backendUrl = process.env.PYTHON_BACKEND_URL || 'http://localhost:5001';
+    // Get backend URL from environment variable
+    const backendUrl = process.env.PYTHON_BACKEND_URL;
+    
+    // If no backend URL is configured, return a friendly message
+    if (!backendUrl || backendUrl === 'https://placeholder-backend.com') {
+      return NextResponse.json({
+        answer: "Hi! I'm Himanshu's AI assistant. I'm currently being set up and will be available soon to answer questions about Himanshu's background, skills, and experience. In the meantime, feel free to explore the portfolio and contact Himanshu directly through the contact section!",
+        context_quality: "info",
+        sources_found: 0
+      });
+    }
     
     // Forward request to Python backend
     const response = await fetch(`${backendUrl}/api/qna`, {
@@ -15,9 +24,9 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
+      // Add timeout for better error handling
+      signal: AbortSignal.timeout(30000) // 30 seconds timeout
     });
-
-    console.log('Backend response status:', response.status);
 
     if (!response.ok) {
       throw new Error(`Backend responded with status: ${response.status}`);
@@ -28,9 +37,12 @@ export async function POST(request: NextRequest) {
     
   } catch (error) {
     console.error('API route error:', error);
-    return NextResponse.json(
-      { error: 'Failed to connect to backend service. Please check if the backend is running.' },
-      { status: 500 }
-    );
+    
+    // Return a user-friendly error message
+    return NextResponse.json({
+      answer: "I'm currently experiencing some technical difficulties. Please try again in a moment, or feel free to reach out to Himanshu directly through the contact section for any inquiries!",
+      context_quality: "error",
+      sources_found: 0
+    });
   }
 }

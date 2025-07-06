@@ -1,15 +1,22 @@
 # Quick Vercel Deployment Guide
 
-## Ready to Deploy! 🚀
+## 🚀 Ready to Deploy!
 
 Your portfolio is now configured to deploy to Vercel with or without the Python backend.
+
+## ⚡ Quick Fix Applied
+
+**Issue Fixed**: Removed experimental CSS optimization that was causing build failures.
+- ✅ Simplified `next.config.ts` 
+- ✅ Simplified `vercel.json`
+- ✅ Build should now work correctly
 
 ## Deployment Steps
 
 ### 1. Push to GitHub
 ```bash
 git add .
-git commit -m "Ready for Vercel deployment"
+git commit -m "Fix build error - ready for deployment"
 git push origin main
 ```
 

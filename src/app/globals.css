@@ -8,11 +8,21 @@ html {
 }
 
 body {
-  font-family: var(--font-body), sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-headline), sans-serif;
+  font-family: var(--font-headline), system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure proper font loading */
+.font-body {
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+.font-headline {
+  font-family: var(--font-headline), system-ui, -apple-system, sans-serif;
 }
 
 

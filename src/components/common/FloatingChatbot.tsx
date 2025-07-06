@@ -74,7 +74,7 @@ const FloatingChatbot = () => {
       
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: data.answer,
+        text: data.answer || data.error || 'Sorry, I could not process your request.',
         sender: 'bot',
         timestamp: new Date(),
       };

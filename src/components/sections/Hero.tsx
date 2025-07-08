@@ -55,7 +55,7 @@ const Hero = () => {
                 <a href="#contact">Contact Me</a>
             </Button>
             <Button asChild variant="outline">
-                <a href="/documents/Himanshu_resume_W.pdf" download>Download CV</a>
+                <a href="/documents/resume.pdf" download>Download CV</a>
             </Button>
           </div>
         </div>

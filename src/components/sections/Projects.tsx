@@ -18,14 +18,14 @@ const projects: Project[] = [
     githubLink: 'https://github.com/zenitsu0509/ARYA-Chatbot',
   },
   {
-    name: 'LinkedIn Post Generator',
-    description: 'A Streamlit app to generate engaging LinkedIn posts using LangChain and ChatGroq API. Features customization for topic, length, and language, with few-shot learning for consistent style.',
-    technologies: ['Python', 'Streamlit', 'LangChain', 'ChatGroq API'],
-    image: '/images/linkdin.png',
-    dataAiHint: 'social media generator',
-    liveDemo: 'https://linkdin-post-generator.streamlit.app/',
-    githubLink: 'https://github.com/zenitsu0509/Linkdin-Post-generator',
-  },
+  name: 'License Plate Recognition (YOLOv8 + CRNN)',
+  description: 'A complete Automatic License Plate Recognition (ALPR) system. It uses a fine-tuned YOLOv8 model for plate detection and a custom-built CRNN in PyTorch for character recognition, all wrapped in an interactive Gradio web app.',
+  technologies: ['Python', 'PyTorch', 'YOLOv8', 'Gradio', 'OpenCV', 'Hugging Face Hub'],
+  image: '/images/alpr-system.png',
+  dataAiHint: 'Object Detection & OCR',
+  liveDemo: 'https://huggingface.co/spaces/zenitsu09/yolo-crnn-plate-Recognition',
+  githubLink: 'https://github.com/zenitsu0509/YOLO-CRNN-Plate-Recognition', // Assumed GitHub link based on your project details
+},
   {
     name: 'MEDGraphy',
     description: 'A medicine graph RAG-based project that leverages a knowledge graph for medical information retrieval, providing accurate answers to complex medical queries.',

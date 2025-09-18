@@ -9,6 +9,24 @@ import type { Project } from '@/types';
 
 const projects: Project[] = [
   {
+    name: 'AI-Samvad: Multi-Domain AI Interview Platform',
+    description: 'Full-stack adaptive AI interview platform for domains like NLP & CV. Real-time audio/video via WebRTC, Whisper STT + multi‑TTS, gaze & browser anti-cheat, automated multi-model (Gemini, Groq, Hugging Face, PlayAI, Whisper) evaluation pipeline with personalized feedback + reporting.',
+    technologies: ['Next.js', 'FastAPI', 'TypeScript', 'WebRTC', 'PostgreSQL', 'LLMs', 'Hugging Face', 'PlayAI', 'MediaPipe', 'Azure', 'Vercel'],
+    image: '/images/ai-samvad.png',
+    dataAiHint: 'ai interview platform ui',
+    liveDemo: 'https://ai-samvad.vercel.app/',
+    githubLink: 'https://github.com/zenitsu0509/AI-Samvad', 
+  },
+  {
+    name: 'AI-Powered Research Assistant (MCP Server)',
+    description: 'Custom MCP-compliant research automation server: natural language literature queries, Arxiv search + metadata extraction, Llama/Llama-8B summarization, GitHub publishing workflow, structured Markdown knowledge base, dual HTTP JSON-RPC + stdio MCP interfaces for Claude & compatible clients.',
+    technologies: ['MCP Protocol', 'Python', 'FastAPI', 'JSON-RPC', 'Arxiv API', 'GitHub API', 'PyGitHub', 'Groq API', 'LLMs'],
+    image: '/images/mcp-assistant.png',
+    dataAiHint: 'research automation server',
+    liveDemo: '#', 
+    githubLink: 'https://github.com/zenitsu0509/mcp-research-assistant', 
+  },
+  {
     name: 'Arya Bhatt Hostel Chatbot',
     description: 'AI-powered chatbot using NLP, Pinecone, and Hugging Face for real-time Q&A. Features a user-friendly Streamlit interface with chat history.',
     technologies: ['Python', 'Streamlit', 'Pinecone', 'Hugging Face', 'NLP'],
@@ -24,7 +42,7 @@ const projects: Project[] = [
   image: '/images/alpr-system.png',
   dataAiHint: 'Object Detection & OCR',
   liveDemo: 'https://huggingface.co/spaces/zenitsu09/yolo-crnn-plate-Recognition',
-  githubLink: 'https://github.com/zenitsu0509/YOLO-CRNN-Plate-Recognition', // Assumed GitHub link based on your project details
+  githubLink: 'https://github.com/zenitsu0509/YOLO-CRNN-Plate-Recognition', 
 },
   {
     name: 'MEDGraphy',

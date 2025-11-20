@@ -9,6 +9,24 @@ import type { Project } from '@/types';
 
 const projects: Project[] = [
   {
+    name: 'Employee NLQ: Production-Grade Natural Language Query System',
+    description: 'Engineered a full-stack NLQ platform with auto-schema discovery, relationship inference, and hybrid query execution across structured (SQL) and unstructured (document) data sources without hard-coded schemas.',
+    technologies: ['React', 'FastAPI (Python)', 'TypeScript', 'PostgreSQL', 'Vector DB (pgvector/FAISS)', 'LLMs (Groq/OpenAI)', 'Redis', 'Docker', 'Azure','CI/CD', 'Vercel'],
+    image: '/images/nlp-project.png',
+    dataAiHint: 'ai interview platform ui',
+    liveDemo: 'https://employee-nlq-frontend.vercel.app/',
+    githubLink: 'https://github.com/zenitsu0509/Employee-NLQ', 
+  },
+   {
+    name: 'TPD:cooking😘',
+    description: '',
+    technologies: [''],
+    image: '/images/ai-agent.png',
+    dataAiHint: 'ai agent',
+    liveDemo: 'https://ai-samvad.vercel.app/',
+    githubLink: 'https://github.com/zenitsu0509/AI-Samvad', 
+  },
+  {
     name: 'AI-Samvad: Multi-Domain AI Interview Platform',
     description: 'Full-stack adaptive AI interview platform for domains like NLP & CV. Real-time audio/video via WebRTC, Whisper STT + multi‑TTS, gaze & browser anti-cheat, automated multi-model (Gemini, Groq, Hugging Face, PlayAI, Whisper) evaluation pipeline with personalized feedback + reporting.',
     technologies: ['Next.js', 'FastAPI', 'TypeScript', 'WebRTC', 'PostgreSQL', 'LLMs', 'Hugging Face', 'PlayAI', 'MediaPipe', 'Azure', 'Vercel'],

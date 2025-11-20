@@ -6,13 +6,33 @@ import type { ExperienceItem } from '@/types';
 
 const workExperience: ExperienceItem[] = [
   {
-    company: 'Whissle AI',
-    title: 'AI/ASR Intern',
-    dates: 'March 2024 - July 2024 (Remote)',
+    company: 'Whissle',
+    title: 'AI Research Fellow · Trainee',
+    dates: 'Jul 2025 - Oct 2025 · California, United States (Remote)',
     description: [
-      'Worked with Meta Automatic Speech Recognition (ASR) models on various speech-related tasks.',
-      'Performed data cleaning and annotation for ASR model training datasets.',
-      'Experimented with and evaluated new and emerging speech data models.',
+      'Researched and fine-tuned advanced ASR models tailored for multilingual enterprise use cases.',
+      'Ran experimentation pipelines to benchmark accuracy, latency, and robustness across noisy speech datasets.',
+      'Partnered with the AI/ML team to productionize promising ASR model variants for customer pilots.',
+    ],
+  },
+  {
+    company: 'Whissle',
+    title: 'Research Intern · Artificial Intelligence & Machine Learning',
+    dates: 'Mar 2025 - Jun 2025 · Remote',
+    description: [
+      'Prototyped new AI models for voice intelligence and evaluated them against established baselines.',
+      'Built data augmentation and labeling workflows that improved downstream ASR training efficiency.',
+      'Documented research findings and shared weekly insights with senior researchers to guide roadmap decisions.',
+    ],
+  },
+  {
+    company: 'BharatWork',
+    title: 'AI Lead · Part-time',
+    dates: 'Sep 2025 · Lucknow, Uttar Pradesh (Hybrid)',
+    description: [
+      'Architected a custom text-to-speech backend leveraging AWS and MediaPipe signals for BharatWork.',
+      'Integrated TTS services with existing product APIs to deliver conversational voice support.',
+      'Defined deployment and monitoring strategy to ensure low latency for regional users.',
     ],
   },
 ];

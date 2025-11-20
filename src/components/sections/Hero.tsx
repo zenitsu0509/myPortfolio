@@ -55,7 +55,10 @@ const Hero = () => {
                 <a href="#contact">Contact Me</a>
             </Button>
             <Button asChild variant="outline">
-                <a href="/documents/resume.pdf" download>Download CV</a>
+                <a href="/documents/himanshu_employee_nlp.pdf" download>Download CV</a>
+            </Button>
+            <Button asChild variant="secondary">
+                <a href="https://calendly.com/gangwarsanu8" target="_blank" rel="noopener noreferrer">Book a Meet</a>
             </Button>
           </div>
         </div>

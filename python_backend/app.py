@@ -24,7 +24,7 @@ class Config:
     INDEX_NAME = "myinfo"
     NAMESPACE = "ns1"
     EMBEDDING_MODEL = "multilingual-e5-large"
-    LLM_MODEL = "llama3-8b-8192"
+    LLM_MODEL = "openai/gpt-oss-20b"
     MAX_QUESTION_LENGTH = 500
     TOP_K = 3
 

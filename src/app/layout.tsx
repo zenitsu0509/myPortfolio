@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/common/theme-provider";
+import BackendWarmup from "@/components/common/BackendWarmup";
 
 const fontBody = Inter({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <BackendWarmup />
           {children}
           <Toaster />
         </ThemeProvider>

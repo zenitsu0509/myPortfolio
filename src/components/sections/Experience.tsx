@@ -6,6 +6,16 @@ import type { ExperienceItem } from '@/types';
 
 const workExperience: ExperienceItem[] = [
   {
+    company: 'Investkode AI',
+    title: 'AI Intern',
+    dates: 'Feb 2026 - Present · Remote',
+    description: [
+      'Building a financial GPT assistant to help users analyze markets, portfolios, and company fundamentals.',
+      'Designing a concall agent to answer questions from earnings and investor call transcripts.',
+      'Designing and iterating on database schemas to support scalable vector search and analytics.',
+    ],
+  },
+  {
     company: 'Whissle',
     title: 'AI Research Fellow · Trainee',
     dates: 'Jul 2025 - Oct 2025 · California, United States (Remote)',

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   description: "Portfolio of Himanshu Gangwar, AI & Machine Learning Engineer specializing in ASR, NLP, and intelligent systems development.",
   keywords: ["Himanshu Gangwar", "AI Engineer", "Machine Learning", "NLP", "ASR", "Portfolio", "Python", "Data Science"],
   authors: [{ name: "Himanshu Gangwar" }],
+  icons: {
+    icon: "/icon.svg",
+  },
   viewport: "width=device-width, initial-scale=1",
 };
 

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, CodeXml } from "lucide-react";
+import { Menu, Braces } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { ThemeToggle } from "./ThemeToggle";
@@ -61,7 +61,7 @@ const Header = () => {
     >
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <CodeXml className="h-6 w-6 text-primary" />
+          <Braces className="h-6 w-6 text-primary" />
           <span className="font-bold font-headline">Himanshu Gangwar</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -81,7 +81,7 @@ const Header = () => {
             <SheetContent side="left">
               <nav className="grid gap-6 text-lg font-medium mt-8">
                 <Link href="/" className="flex items-center gap-2 text-lg font-semibold mb-4">
-                   <CodeXml className="h-6 w-6 text-primary" />
+                   <Braces className="h-6 w-6 text-primary" />
                    <span className="font-bold font-headline">Himanshu Gangwar</span>
                 </Link>
                 {navLinks.map((link) => (
